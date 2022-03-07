@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  height: 100vh;
+}
+.container {
+  background-color: var(--Dark-Blue);
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.advice-container {
+  width: 90%;
+  max-width: 30rem;
+  margin: 0 auto;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+.divider {
+  margin-bottom: 2rem;
+}
+.advice-id {
+  color: var(--Neon-Green);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.advice-text {
+  color: var(--Light-Cyan);
+  font-weight: 800;
+}
+.divider-desktop {
+  display: none;
+}
+.generator {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--Neon-Green);
+}
+.generator:hover {
+  box-shadow: 0 0 1.5rem 0 var(--Neon-Green);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 38rem) {
+  .divider-desktop {
+    display: block;
+  }
+  .divider-mobile {
+    display: none;
+  }
+}
