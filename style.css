@@ -16,6 +16,10 @@ body {
   font-size: 1.5rem;
   height: 100vh;
 }
+img,
+svg {
+  pointer-events: none;
+}
 .container {
   background-color: var(--Dark-Blue);
   height: 100%;
@@ -24,7 +28,7 @@ body {
 }
 .advice-container {
   width: 90%;
-  max-width: 30rem;
+  max-width: 38rem;
   margin: 0 auto;
   background-color: var(--Dark-Grayish-Blue);
   border-radius: 1rem;
@@ -34,7 +38,7 @@ body {
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 2rem;
   position: relative;
 }
 .divider {
@@ -78,10 +82,17 @@ body {
   color: hsl(228, 45%, 44%);
 }
 @media (min-width: 38rem) {
+  body {
+    font-size: 1.75rem;
+  }
   .divider-desktop {
     display: block;
   }
   .divider-mobile {
     display: none;
+  }
+  .generator {
+    width: 4rem;
+    height: 4rem;
   }
 }
