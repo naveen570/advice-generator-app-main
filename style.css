@@ -5,6 +5,7 @@
   margin: 0;
 }
 :root {
+  font-size: 1rem;
   --Light-Cyan: hsl(193, 38%, 86%);
   --Neon-Green: hsl(150, 100%, 66%);
   --Grayish-Blue: hsl(217, 19%, 38%);
@@ -13,7 +14,6 @@
 }
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 1.5rem;
   height: 100vh;
 }
 img,
@@ -46,7 +46,7 @@ svg {
 }
 .advice-id {
   color: var(--Neon-Green);
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -54,6 +54,7 @@ svg {
 .advice-text {
   color: var(--Light-Cyan);
   font-weight: 800;
+  font-size: 1.5rem;
 }
 .divider-desktop {
   display: none;
@@ -94,5 +95,8 @@ svg {
   .generator {
     width: 4rem;
     height: 4rem;
+  }
+  .advice-text {
+    font-size: 1.75rem;
   }
 }
